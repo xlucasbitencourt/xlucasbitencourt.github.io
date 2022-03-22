@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    min-width: 1200px;
+    background-image: url(/Imagens/bits.jpg);
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border: 3px solid rgb(37, 38, 219);
+}
+
+#lucas {
+    font-size: 100px;
+    font-family: 'Great Vibes', cursive;
+    background-color: rgba(37, 38, 219, 80%);
+    padding: 15px;
+    text-align: center;
+    margin-top: 0.1%; /*alterar para 0,1% se desistir do menu móvel*/
+    margin-bottom: 0.5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 600px;
+    min-width: 600px;
+}
+
+#lucas:hover {
+    color: #FF0B0B;
+    font-style: italic;
+}
+
+#fotolucas {
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+    padding: 8px;
+    background-color: rgb(37, 38, 219);
+}
+
+h2 {
+    padding: 1%;
+    font-size: 60px;
+}
+
+#indice {
+    text-align: center;
+    min-width: 800px;
+    font-size: 25px;
+    margin: 0 10%; /*ativar se for desabilitar a rolagem */
+    /*position: fixed;  /*ativar para habilitar a rolagem*/
+    /* margin: 0 28% 0 28%; */
+}
+
+#indice a {
+    color: inherit;
+    font-weight: bolder;
+    margin: 10px;
+    line-height: 80px;
+    width: fit-content;
+    padding: 20px;
+    background-color: rgb(37, 38, 219);
+    border-radius: 600px;
+    text-decoration: none;
+}
+
+#indice a:hover {
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: #FF0B0B;
+}
+
+#trybe {
+    text-decoration: none;
+    color: inherit;
+}
+
+#trybe:hover {
+    background-color: #FF0B0B;
+    border-radius: 90%;
+}
+
+.corpo {
+    background-color: rgba(37, 38, 219, 90%);
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    /* min-width: 600px; */
+    border-radius: 150px;
+}
+
+#intro {
+    width: 100%;
+    text-align: justify;
+    padding: 1%;
+}
+
+.topico {
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.assunto {
+    font-size: 40px;
+    padding: 1%;
+    width: 100%;
+    font-weight: bold;
+}
+
+.descrição {
+    width: 100%;
+    padding: 1%;
+    text-align: justify;
+}
+
+#listahabilidade li {
+    font-size: 30px;
+}
+
+#listaprojetos li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#cont {
+    text-align: center;
+    padding: 1%;
+    min-width: 600px;
+}
+
+.contato {
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 100%;
+}
+
+#mapa {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
