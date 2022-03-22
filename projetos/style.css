@@ -6,7 +6,7 @@
     border: 1px solid black; 
     display: inline-block;
     margin: 0px;
-    padding: 50px;
+    padding: 30px;
 }
 
 #preto {
@@ -79,7 +79,7 @@ hr {
 #tamanho-quadro {
 	background-color: grey;
 	font-size: 25px;
-	height: 50px;
+	height: 80px;
 	margin: 10px 0;
 	width: 600px;
 	align-items: baseline;
@@ -102,12 +102,16 @@ hr {
 	margin-left: 15px;
 }
 
+#pixel-board {
+	width: 600px;
+}
+
 .pixel { /*Requisito 5*/
     background-color: white;
     border: 1px solid black;
     height: 40px;
     width: 40px;
-    padding: 40px;
+	padding: 10px;
     display: inline-block;
 	/*border-radius: 100%;*/
   }
