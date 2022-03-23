@@ -38,8 +38,8 @@ function gerarQuadro() {
   if (tamanhoQuadro.value < 5) { // Requisito 11 (Os dois IF)
     tamanhoQuadro.value = 5;
   }
-  if (tamanhoQuadro.value > 50) {
-    tamanhoQuadro.value = 50;
+  if (tamanhoQuadro.value > 9) {
+    tamanhoQuadro.value = 9;
   }
   for (let index = 1; index <= tamanhoQuadro.value; index++) {
     const novoPixel = document.createElement('div');
@@ -51,6 +51,7 @@ function gerarQuadro() {
       console.log(geraPixel);
     }
   }
+  tamanhoQuadro.value = '';
   marcaPixel();
 }
 

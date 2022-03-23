@@ -1,6 +1,11 @@
-/*body {
-     background-color: lightgray; ativar o final
- }*/
+body {
+     background-color: lightgray;
+ }
+
+ #title {
+	 font-family: monospace;
+	 font-size: 35px
+ }
 
 .color { /* Requisito 2*/
     border: 1px solid black; 
@@ -11,25 +16,12 @@
 
 #preto {
     background-color: black; /* Requisito 3 */
-    /* background-color: #7CFFCB; */
 }
-
-/* #cor2 {
-    background-color: #791E94;
-}
-
-#cor3 {
-    background-color: #F7D126;
-}
-
-#cor4 {
-    background-color: #FD721D;
-} */
 
 #clear-board {
     font-size: 25px;
     color: black;
-	width: 600px;
+	min-width: 300px;
 	height: 50px;
 	cursor: pointer;
 	border: none;
@@ -78,10 +70,9 @@ hr {
 
 #tamanho-quadro {
 	background-color: grey;
-	font-size: 25px;
+	font-size: 20px;
 	height: 80px;
 	margin: 10px 0;
-	width: 600px;
 	align-items: baseline;
 }
 
@@ -89,18 +80,25 @@ hr {
 	width: 70px;
 	height: 20px;
 	background-color: lightskyblue;
+	margin-left: 5px;
 }
 
 #generate-board {
 	font-size: 25px;
     color: #0fa36b;
 	cursor: pointer;
-	border: none;
-	align-items: center;
-	justify-content: center;
 	background-color: black;
 	margin-left: 15px;
+	height: 40px;
 }
+
+#generate-board:hover {
+	background-color: #0fa36b;
+	color: black;
+	border-radius: 50%;
+	transition: 1000ms;
+}
+
 
 #pixel-board {
 	width: 600px;
@@ -113,5 +111,15 @@ hr {
     width: 40px;
 	padding: 10px;
     display: inline-block;
-	/*border-radius: 100%;*/
+	margin-top: -4px;
+	/*border-radius: 100%; */
+  }
+
+footer {
+	font-size: 20px;
+}
+
+#trybe {
+	  background-color: #0fa36b;
+	  color: black;
   }
