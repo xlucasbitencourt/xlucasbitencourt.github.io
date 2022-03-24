@@ -1,0 +1,47 @@
+#meme-image-container {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black; /* Requisito 3 */
+  background-color: white; /* Requisito 3 */
+}
+
+/* Tamanho da caixa e da imagem devem ser os mesmos */
+#meme-image-container , #meme-image {
+  width: 500px;
+  height: 500px;
+}
+
+#meme-text {
+  position: absolute; /* Requisito 2 */
+  border: 1px solid salmon;
+  z-index: 2; /* Requisito 2 */
+  text-shadow: 5px 5px 5px black; /* Requisito 4 */
+  font-size: 30px; /* Requisito 4 */
+  color: white; /* Requisito 4 */
+}
+
+#meme-insert {
+  border: 1px solid sandybrown;
+}
+
+#meme-image {
+  position: absolute; /* Requisito 2 */
+  z-index: 1; /* Requisito 2 */
+}
+
+#fire { /* Requisito 6 */
+  background-color: red;
+}
+
+#water { /* Requisito 6 */
+  background-color: blue;
+}
+
+#earth { /* Requisito 6 */
+  background-color: green;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 100px;
+  height: 100px;
+}

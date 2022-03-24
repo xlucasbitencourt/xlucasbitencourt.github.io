@@ -1,0 +1,7 @@
+.selected {
+    background-color: grey;
+}
+
+.completed { /*Requisito 9*/
+    text-decoration: line-through;
+}

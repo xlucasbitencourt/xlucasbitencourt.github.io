@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meme.css">
+    <title>Lucas Bitencourt - Projeto Meme Generator</title>
+</head>
+
+<body>
+    <main>
+        <input id="text-input" type="text" maxlength="60" autofocus> <!--Requisito 1 e 5-->
+        <div id="meme-image-container"> <!--Requisito 1-->
+            <p id="meme-text"></p> <!--Requisito 1-->
+            <img id="meme-image" src="" alt=""> <!--Requisito 2-->
+
+        </div>
+        <input id="meme-insert" type="file" accept="image/*"> <!--Requisito 2-->
+        <br>
+        <button id="fire">Fogo</button> <!--Requisito 6-->
+        <button id="water">Água</button> <!--Requisito 6-->
+        <button id="earth">Terra</button> <!--Requisito 6-->
+        <br>
+        <img id="meme-1" src="/projetos/imgs/meme1.png" alt=""> <!--Requisito 7-->
+        <img id="meme-2" src="/projetos/imgs/meme2.png" alt=""> <!--Requisito 7-->
+        <img id="meme-3" src="/projetos/imgs/meme3.png" alt=""> <!--Requisito 7-->
+        <img id="meme-4" src="/projetos/imgs/meme4.png" alt=""> <!--Requisito 7-->
+    </main>
+    <script src="meme.js"></script>
+</body>
+</html>
