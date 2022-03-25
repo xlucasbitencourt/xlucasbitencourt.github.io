@@ -48,7 +48,6 @@ function gerarQuadro() {
       const geraPixel = document.createElement('span');
       geraPixel.className = 'pixel';
       novoPixel.appendChild(geraPixel);
-      console.log(geraPixel);
     }
   }
   tamanhoQuadro.value = '';
@@ -79,7 +78,6 @@ function pinta(cor) { // função realizada graças a pesquisa no w3schools
   const dadosSelecao = window.getComputedStyle(selecao, null);
   const corSelecionada = dadosSelecao.getPropertyValue('background-color');
   cor.target.style.backgroundColor = corSelecionada;
-  console.log('função pinta');
 }
 
 // Requisito 9
@@ -92,4 +90,3 @@ function limparQuadro() {
   }
 }
 
-console.log(document.getElementById('pixel'));
