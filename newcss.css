@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.contato {
+    width: 50px;
+}
+
+#lucas {
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+#lucas:hover {
+    color: #FF0B0B;
+    font-style: italic;
+}
+
+#fotolucas {
+    margin: auto;
+}
+
+#indice {
+    font-size: 18px;
+    margin-left: -20px;
+}
+
+#indice a {
+    font-weight: bolder;
+    padding: 0 3px;
+}
+
+#indice a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bolder;
+}
