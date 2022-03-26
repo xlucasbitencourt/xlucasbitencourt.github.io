@@ -13,14 +13,29 @@
 
 <body class="container">
     <!--início do  índice-->
-    <div class="navbar-fixed">
-        <nav class="nav-wrapper" id="indice">
-            <a href="#ola">Introdução</a>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#habilidade">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </div>
+<!-- Dropdown Structure -->
+<div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#ola">Introdução</a></li>
+        <li class="divider"></li>
+        <li> <a href="#sobre">Sobre mim</a></li>
+        <li class="divider"></li>
+        <li><a href="#habilidade">Habilidades</a></li>
+        <li class="divider"></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="left">
+                <li><a href="#lucas">Início</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
     <!--Fim do índice-->
     <br>
 
@@ -120,7 +135,14 @@
             </div>
           </footer>
     </main>
+    <script src="/materialize/js/materialize.min.js"></script>
+    <script>
+        var dropdowns = document.querySelectorAll('.dropdown-trigger')
+for (var i = 0; i < dropdowns.length; i++){
+    M.Dropdown.init(dropdowns[i]);
+}
 
+    </script>
 
 
     <!-- <p>Abaixo, uma foto do que eu mais gosto nessa vida:</p> 
