@@ -11,7 +11,7 @@
     <title>Lucas Bitencourt</title>
 </head>
 
-<body class="container">
+<body class="container light-blue accent-3">
     <!--início do  índice-->
 <!-- Dropdown Structure -->
 <div class="navbar-fixed">
@@ -23,14 +23,15 @@
         <li><a href="#habilidade">Habilidades</a></li>
         <li class="divider"></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li class="divider"></li>
         <li><a href="#contato">Contato</a></li>
     </ul>
-    <nav>
-        <div class="nav-wrapper">
+    <nav id="indice">
+        <div class="nav-wrapper indigo darken-4">
             <ul class="left">
                 <li><a href="#lucas">Início</a></li>
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i
+                <li><a class="dropdown-trigger menu-lista" href="#!" data-target="dropdown1">Menu<i
                             class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
@@ -107,7 +108,8 @@
         <ul id="listaprojetos">
             <li><a href="./projetos/pixelart.html" target="_blank">Pixel Art</a></li>
         </ul>
-        <footer class="page-footer">
+    </main>
+        <footer class="page-footer indigo darken-4">
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
@@ -115,7 +117,7 @@
                   <p class="grey-text text-lighten-4">Você pode entrar em contato comigo das seguintes formas:</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                  <ul>
+                  <ul id="img-contato">
                     <li><a class="grey-text text-lighten-3" href="https://github.com/xlucasbitencourt"><img class="contato" src="/Imagens/github.jpg"
                         alt="GitHub"></a></li>
                     <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/lucasbitencourt/"><img class="contato"
@@ -130,11 +132,10 @@
             <div class="footer-copyright">
               <div class="container">
                 Criado por Lucas Bitencourt. Última atualização: 24/03/2022
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
               </div>
             </div>
           </footer>
-    </main>
+    
     <script src="/materialize/js/materialize.min.js"></script>
     <script>
         var dropdowns = document.querySelectorAll('.dropdown-trigger')

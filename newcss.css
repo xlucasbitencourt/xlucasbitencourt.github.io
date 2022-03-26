@@ -30,17 +30,27 @@ main {
 }
 
 #indice {
-    font-size: 18px;
-    margin-left: -20px;
+    margin-left: -15px;
 }
 
 #indice a {
+    font-size: 25px;
     font-weight: bolder;
-    padding: 0 3px;
+    padding: 0 25px;
+    margin: 15px 2px;
 }
 
 #indice a:hover {
     text-decoration: underline;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bolder;
+    margin: 10px 2px;
+}
+
+.menu-lista {
+    width: 200px;
+}
+
+#img-contato {
+    display: flex;
 }
