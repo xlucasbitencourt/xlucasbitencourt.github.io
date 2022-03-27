@@ -1,0 +1,24 @@
+       <h2 id="contato" class="topico">Contato</h2>
+        <div id="cont">
+            <a href="https://github.com/xlucasbitencourt" target="_blank"><img class="contato" src="/Imagens/github.jpg"
+                    alt="GitHub" width="150"></a>
+            <a href="https://www.linkedin.com/in/lucasbitencourt/" target="_blank"><img class="contato"
+                    src="/Imagens/linkedin.png" alt="LinkedIn" width="150"></a>
+            <a href="https://www.instagram.com/xlucasbitencourt/" target="_blank"><img class="contato"
+                    src="/Imagens/instagram.png" alt="Instagram" width="150"></a>
+        </div>
+        <footer class="page-footer">
+            <p class="flow-text">Criado por Lucas Bitencourt. Última atualização: 24/03/2022</p> 
+        </footer>
+
+
+        --------------nova barra navegação-------------------------
+
+            <div class="navbar-fixed">
+        <nav class="nav-wrapper" id="indice">
+            <a href="#ola">Introdução</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidade">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
