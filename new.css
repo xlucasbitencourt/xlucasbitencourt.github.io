@@ -1,0 +1,25 @@
+/* .main-conteiner {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+} */
+
+.titulo {
+    flex-wrap: nowrap;
+    min-width: 400px;
+}
+
+#foto-lucas {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.habilidade {
+    justify-content: center;
+    text-align: center;
+}
+
+.habilidade div {
+    border: 1px dotted blue;
+    height: 4em;
+}
