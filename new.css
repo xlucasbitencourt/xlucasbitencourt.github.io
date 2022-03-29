@@ -1,17 +1,29 @@
-/* .main-conteiner {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .titulo {
+    font-family: 'Great Vibes', cursive;
     flex-wrap: nowrap;
     min-width: 400px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 100px;
+}
+
+.title.is-1 {
+    font-size: 4.4em;
+}
+
+.bem-vindo {
+    text-align: center;
 }
 
 #foto-lucas {
-    width: 200px;
+    width: 180px;
     border-radius: 100%;
+}
+
+p {
+    text-align: justify;
 }
 
 .habilidade {
@@ -22,4 +34,32 @@
 .habilidade div {
     border: 1px dotted blue;
     height: 4em;
+}
+
+.projeto {
+    font-size: 25px;
+}
+
+.contato {
+    border-radius: 100%;
+    width: 70px;
+}
+
+.float{ /* Necessário para o botão do whatsapp */
+	position:fixed; 
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{ /* Necessário para o botão do whatsapp */
+	margin-top:16px;
 }
