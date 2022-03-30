@@ -113,6 +113,11 @@ main p {
     background-color: #6EC1C4;
 }
 
+.container-footer {
+    width: 1080px;
+    background-color: #6EC1C4;
+}
+
 .float {
     /* Necessário para o botão do whatsapp */
     position: fixed;
