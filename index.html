@@ -5,156 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="newcss.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!-- style para botão do whatsapp-->
+    <link rel="stylesheet" href="/bulma/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Lucas Bitencourt</title>
 </head>
 
-<body class="light-blue accent-4">
-    <!--início do  índice-->
-<!-- Dropdown Structure -->
-<div class="navbar-fixed">
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#ola">Introdução</a></li>
-        <li class="divider"></li>
-        <li> <a href="#sobre">Sobre mim</a></li>
-        <li class="divider"></li>
-        <li><a href="#habilidade">Habilidades</a></li>
-        <li class="divider"></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li class="divider"></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-    <nav id="indice">
-        <div class="nav-wrapper indigo darken-4">
-            <ul class="menu-principal">
-                <li><a href="#lucas">Início</a></li>
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-trigger menu-lista" href="#!" data-target="dropdown1">Menu<i
-                            class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand topo">
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/lucasbitencourt/" target="_blank">
+                <img src="/Imagens/lucas.png"
+                    alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu topo">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#titulo">
+                    Início
+                </a>
+
+                <a class="navbar-item" href="#ola">
+                    Introdução
+                </a>
+
+                <a class="navbar-item" href="#habilidades">
+                    Habilidades
+                </a>
+
+                <a class="navbar-item" href="#projetos">
+                    Projetos
+                </a>
+
+                <a class="navbar-item" href="#cont">
+                    Contato
+                </a>
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-danger" href="https://www.google.com.br/">
+                            Sair
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
-</div>
-    <!--Fim do índice-->
-    <br>
+    <div class="container">
+        <header class="content">
+            <h1 class="title is-1" id="titulo">Lucas Bitencourt</h1>
+            <h3 class="subtitle is-4 bem-vindo">Bem-vindo à minha página!</h3>
+            <figure class="image">
+                <img id="foto-lucas"
+                    src="https://scontent.fgig14-1.fna.fbcdn.net/v/t1.6435-9/161980794_5371875952886211_4507302554657721046_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFpXVNhb1bEhiRPsQsZ1kpGPSJTnwjO5xI9IlOfCM7nEk3NPxtnKDY_JlUaHOke7WT4EL7GKA0rMZo9yDc2I2vo&_nc_ohc=knZgY5h5EzgAX_XGueU&_nc_ht=scontent.fgig14-1.fna&oh=00_AT9p15rVRm0cMAq6WBH2H4aZ6PNVETORpEVNX-8q_XLEKg&oe=6263FE3C"
+                    alt="Lucas Bitencourt, futuro desenvolvidor Web">
+            </figure>
+        </header>
 
-    <header>
-        <h1 id="lucas">Lucas Bitencourt</h1>
-    </header>
-    <img class="circle" id="fotolucas"
-        src="https://scontent.fgig14-1.fna.fbcdn.net/v/t1.6435-9/161980794_5371875952886211_4507302554657721046_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFpXVNhb1bEhiRPsQsZ1kpGPSJTnwjO5xI9IlOfCM7nEk3NPxtnKDY_JlUaHOke7WT4EL7GKA0rMZo9yDc2I2vo&_nc_ohc=knZgY5h5EzgAX_XGueU&_nc_ht=scontent.fgig14-1.fna&oh=00_AT9p15rVRm0cMAq6WBH2H4aZ6PNVETORpEVNX-8q_XLEKg&oe=6263FE3C"
-        alt="Lucas Bitencourt, futuro desenvolvedor Web" width="220">
-    <main class="container corpo">
-        <h2 id="ola">Olá!</h2>
-        <p class="flow-text" id="intro">Me chamo Lucas Bitencourt, e atualmente estou estudando Desenvolvimento Web pela <a id="trybe"
-                href="https://www.betrybe.com/" target="_blank">Trybe</a>.
-            Sou carioca, moro atualmente em Nova Friburgo - RJ, tenho 2 gatos lindíssimos, e busco ser um programador
-            muito
-            em breve.
-            Sou formado em Administração pela UNIRIO, porém estou em busca de mudança de carreira. Estou me aventurando
-            no
-            mundo da programação, e quem sabe, daqui a um ano, este site estará bem melhor, e bem profissional.</p>
-        <h2 id="sobre" class="topico">Sobre mim:</h2>
-        <ul>
-            <li class="assunto"><h3>Tecnologia</h3></li>
-            <p class="flow-text descrição">Desde criança, sempre gostei de tecnologia, e sempre fui fascinado por qualquer eletrônico novo que era lançado. Portanto, acaba sendo natural eu querer trabalhar numa área tão tecnológica quanto a programação.</p>
-            <li class="assunto"><h3>Jogos</h3></li>
-            <p class="flow-text descrição">Sempre gostei bastante de videogames. Já passei por diversos consoles, começando no Mega Drive. Jogo atualmente no PS5, mas as vezes jogo
-                também no PC. Quem quiser me acompanahar, este são meus IDs: 
-                <a href="https://psnprofiles.com/LBLukz" target="_blank">
-                    <img src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlib-base/resources/ps-bug.svg"
-                        alt="PSN" width="20">
-                </a> <a href="https://steamcommunity.com/id/lblukz" target="_blank"><img
-                        src="https://community.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
-                        width="70" alt="Steam"> </a></p>
-            <li class="assunto"><h3>Natureza</h3></li>
-            <p class="flow-text descrição">Cresci e vivi muito próximo da natureza, então hoje em dia eu valorizo bastante, e
-                sempre que possível, saio me aventurando por aí em trilhas, acampamentos, sempre descobrindo novos
-                lugares.</p>
-            <li class="assunto"><h3>Música</h3></li>
-            <p class="flow-text descrição">Apaixonado por música. Infelizmente não nasci com o dom para ser músico, porém admiro
-                bastante quem tem, e ouço música quase toda hora (inclusive, estou ouvindo enquanto escrevo isso).</p>
-            <li class="assunto"><h3>Minha cidade</h3></li>
-            <p class="flow-text descrição">Nova Friburgo é um município brasileiro do estado do Rio de Janeiro, Região Sudeste do
-                país. <br> As principais atividades econômicas são baseadas em: indústria metalúrgica, moda íntima,
-                olericultura, caprinocultura e indústria (têxteis, vestuário e do setor metal-mecânico) e turismo. É
-                também a cidade mais fria do estado.</p>
-                <iframe id="mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118141.65945179234!2d-42.603000082703986!3d-22.280760331829093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a936f151283%3A0xff2b16c0bfb117c4!2sNova%20Friburgo%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1646508185838!5m2!1spt-BR!2sbr"
-                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </ul>
-        <br>
-        <h2 id="habilidade" class="topico">Habilidades técnicas que pretendo adquirir durante minha formação:</h2>
-        <ul id="listahabilidade">
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>Express.js</li>
-            <li>SQL</li>
-            <li>NoSQL</li>
-            <li>Git</li>
-            <li>Python</li>
-            <li>ORM</li>
-            <li>Algoritmos e estrutura de dados</li>
-        </ul>
-        <br><br>
-        <h2 id="projetos" class="topico">Projetos</h2>
-        <ul id="listaprojetos">
-            <li><a class="projeto" href="./projetos/pixelart.html" target="_blank">Pixel Art</a></li>
-        </ul>
-        <br>
-    </main>
-        <footer class="page-footer indigo darken-4">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h4 id="contato" class="white-text">Contato</h5>
-                  <p class="grey-text text-lighten-4 flow-text">Você pode entrar em contato comigo das seguintes formas:</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                  <ul id="img-contato">
-                    <li><a class="grey-text text-lighten-3" href="https://github.com/xlucasbitencourt"><img class="contato" src="/Imagens/github.jpg"
-                        alt="GitHub"></a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/lucasbitencourt/"><img class="contato"
-                        src="/Imagens/linkedin.png" alt="LinkedIn"></a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/xlucasbitencourt/"><img class="contato"
-                        src="/Imagens/instagram.png" alt="Instagram"></a></li>
-                    <li><a class="grey-text text-lighten-3" href="mailto:klucasbitencouer@gmail.com"><img src="/Imagens/gmail.png" class="contato" alt="Gmail"></a></li>
-                  </ul>
-                </div>
-              </div>
+        <main class="content">
+            <h2 class="title is-2" id="ola">Olá!</h2>
+            <p>
+                Me chamo Lucas Bitencourt, sou brasileiro, nascido no Rio de Janeiro, e atualmente sou estudante de
+                desenvolvimento web. Esta é a minha página para mostrar meu progresso conforme eu for avançando no meu
+                curso. Em breve, me tornarei um desenvolvedor full-stack, e durante minha trajetória, irei atualizando
+                este site. Sinta-se a vontade para voltar sempre, e ver a mudanças.
+            </p>
+
+
+            <h2 class="title is-2">Sobre mim:</h2>
+            <h3 class="title is-3" id="habilidades">Formação</h3>
+            <p>
+                Sou formado em Administração pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Possuo
+                bastante experiência na área tecnológica, tanto em uso, quanto em criação.
+                Atualmente, sou aluno da Trybe, no curso de desenvolvimento web, desde fevereiro de 2022. Durante o
+                período de 12 meses, irei aprender os seguintes conteúdos:
+            </p>
+            <br>
+            <div class="columns is-vcentered is-multiline habilidade">
+                <div class="column is-one-quarter javascript">Javascript</div>
+                <div class="column is-one-quarter html">HTML</div>
+                <div class="column is-one-quarter css">CSS</div>
+                <div class="column is-one-quarter react">React</div>
+                <div class="column is-one-quarter node">Node</div>
+                <div class="column is-one-quarter express">Express.js</div>
+                <div class="column is-one-quarter sql">SQL</div>
+                <div class="column is-one-quarter nosql">NoSQL</div>
+                <div class="column is-one-quarter git">Git</div>
+                <div class="column is-one-quarter python">Python</div>
+                <div class="column is-one-quarter orm">ORM</div>
+                <div class="column is-one-quarter algoritmos">Algoritmos e estrutura de dados</div>
             </div>
-            <div class="footer-copyright">
-              <div class="container">
-                Criado por Lucas Bitencourt. Última atualização: 26/03/2022
-              </div>
+            <h2 class="title is-2" id="projetos">Projetos</h2>
+            <h4 class="subtitle is-5">Aqui você poderá ver os meus projetos, conforme eu for disponibilizando aqui, após
+                conclídos.</h4>
+            <div class="content">
+                <ul>
+                    <li>
+                        <a class="projeto" href="./projetos/pixelart.html" target="_blank">Pixel Art</a>
+                        <p class="subtitle is-6">Pinte um quadro em branco com as cores pré definidas.</p>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="container title is-2" id="cont">Contato</h2>
+            <h4 class="subtitle is-4">Você pode entrar em contato comigo das seguintes formas: </h4>
+            <div class="box-contato">
+                <a href="https://github.com/xlucasbitencourt"><img class="contato" src="/Imagens/github.jpg"
+                        alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/lucasbitencourt/"><img class="contato" src="/Imagens/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/xlucasbitencourt/"><img class="contato" src="/Imagens/instagram.png"
+                        alt="Instagram"></a>
+                <a href="mailto:klucasbitencouer@gmail.com"><img src="/Imagens/gmail.png" class="contato"
+                        alt="Gmail"></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                Criado por Lucas Bitencourt. Última atualização: 30/03/2022.
+              </p>
             </div>
           </footer>
-          <!--Link para botão whatsapp-->
-          <a href="https://wa.me/5521976979595?text=Ol%C3%A1.+Vi+seu+portf%C3%B3lio+e+achei+muito+bacana+%3A%29" class="float" target="_blank">
-            <i class="fa fa-whatsapp my-float"></i>
-            </a>
-            <!--Script para menu dropdown-->
-    <script src="/materialize/js/materialize.min.js"></script>
-    <script>
-        var dropdowns = document.querySelectorAll('.dropdown-trigger')
-for (var i = 0; i < dropdowns.length; i++){
-    M.Dropdown.init(dropdowns[i]);
-}
-
-    </script>
-
-
-    <!-- <p>Abaixo, uma foto do que eu mais gosto nessa vida:</p> 
-  <img src="JoeMile.jpg" width="800">
-  <br><br-->
-
-    <!--Hey CTRL+/ transforma texto selecionado em comentário igual a esse-->
+    </div>
+    <!--Botão do whatsapp-->
+<a href="https://wa.me/5521976979595?text=Ol%C3%A1.+Vi+seu+portf%C3%B3lio+e+achei+muito+bacana+%3A%29" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+<script src="script.js"></script>
 </body>
-<!-- teste de upload -->
+
 </html>
