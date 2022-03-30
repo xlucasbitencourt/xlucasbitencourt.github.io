@@ -22,4 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
+})
+
+function atualizaData() {
+    let hoje = document.getElementById('data-hoje');
+    hoje.innerHTML = moment().format('DD/MM/YYYY');
+}
+
+atualizaData();
