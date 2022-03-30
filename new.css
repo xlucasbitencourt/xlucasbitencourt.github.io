@@ -33,7 +33,75 @@ p {
 
 .habilidade div {
     border: 1px dotted blue;
-    height: 4em;
+    height: 7em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #25d366;
+}
+
+/* .javascript,
+.html,
+.css,
+.react,
+.node,
+.express,
+.sql,
+.nosql,
+.git,
+.python,
+.orm,
+.algoritmos {
+    
+} */
+
+.javascript {
+    background-image: url(/Imagens/js.jpg);
+}
+
+.html {
+    background-image: url(/Imagens/html.png);
+}
+
+.css {
+    background-image: url(/Imagens/css.jpg);
+}
+
+.react {
+    background-image: url(/Imagens/react.png);
+}
+
+.node {
+    background-image: url(/Imagens/node.jpg);
+}
+
+.express {
+    background-image: url(/Imagens/express.png);
+}
+
+.sql {
+    background-image: url(/Imagens/sql.png);
+}
+
+.nosql {
+    background-image: url(/Imagens/nosql.jpg);
+}
+
+.git {
+    background-image: url(/Imagens/git.png);
+}
+
+.python {
+    background-image: url(/Imagens/python.jpg);
+}
+
+.orm {
+    background-image: url(/imagens/orm.jpg);
+}
+
+.algoritmos {
+    background-image: url(/Imagens/algoritmo.png);
 }
 
 .projeto {
@@ -45,21 +113,23 @@ p {
     width: 70px;
 }
 
-.float{ /* Necessário para o botão do whatsapp */
-	position:fixed; 
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+    /* Necessário para o botão do whatsapp */
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
-.my-float{ /* Necessário para o botão do whatsapp */
-	margin-top:16px;
+.my-float {
+    /* Necessário para o botão do whatsapp */
+    margin-top: 16px;
 }
