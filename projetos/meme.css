@@ -1,6 +1,15 @@
+h1 {
+  font-family: monospace;
+  font-size: 35px;
+}
+
+#text-input {
+  height: 20px;
+  width: 50%;
+}
+
 #meme-image-container {
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 0;
   border: 1px solid black; /* Requisito 3 */
   background-color: white; /* Requisito 3 */
 }
@@ -13,7 +22,6 @@
 
 #meme-text {
   position: absolute; /* Requisito 2 */
-  border: 1px solid salmon;
   z-index: 2; /* Requisito 2 */
   text-shadow: 5px 5px 5px black; /* Requisito 4 */
   font-size: 30px; /* Requisito 4 */
@@ -21,12 +29,16 @@
 }
 
 #meme-insert {
-  border: 1px solid sandybrown;
+  margin: 10px 0;
 }
 
 #meme-image {
   position: absolute; /* Requisito 2 */
   z-index: 1; /* Requisito 2 */
+}
+
+#label-arquivo {
+  font-size: 20px;
 }
 
 #fire { /* Requisito 6 */
@@ -41,7 +53,45 @@
   background-color: green;
 }
 
+#fire , #water , #earth {
+  width: 80px;
+  height: 40px;
+  margin: 10px 2px;
+  border-radius: 40%;
+}
+
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  margin: 10px 1px;
   width: 100px;
   height: 100px;
+}
+
+footer {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 450px){
+  h1 {
+    font-size: 32px;
+  }
+
+  #text-input {
+    height: 15px;
+    width: 200px;
+  }
+
+
+  #meme-image-container , #meme-image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  #meme-1 , #meme-2 , #meme-3 , #meme-4 {
+    width: 70px;
+    height: 70px;
+  }
+  
+  #meme-image-container {
+    margin: 10px 0;
+  }
 }
