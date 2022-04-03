@@ -3,6 +3,10 @@
 	 font-size: 35px
  }
 
+ #color-palette {
+	 margin: 10px -30px;
+ }
+
 .color { /* Requisito 2*/
     border: 1px solid black; 
     display: inline-block;
@@ -73,8 +77,8 @@ hr {
 
 #board-size {
 	color: black;
-	width: 300px;
-	height: 20px;
+	width: 250px;
+	height: 30px;
 	background-color: lightskyblue;
 	margin-left: 5px;
 }
