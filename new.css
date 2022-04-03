@@ -8,6 +8,7 @@ html {
 
 .topo {
     background-color: rgb(110, 193, 196);
+    background-image: linear-gradient(rgb(110, 193, 196), rgba(110, 193, 196, 0.8));
 }
 
 #titulo {
@@ -124,6 +125,7 @@ main p {
 .container-footer {
     width: 1080px;
     background-color: #6EC1C4;
+    background-image: linear-gradient(rgba(110, 193, 196, 0.8), rgba(110, 193, 196, 1));
 }
 
 .float {
