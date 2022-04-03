@@ -26,6 +26,7 @@ h1 {
   text-shadow: 5px 5px 5px black; /* Requisito 4 */
   font-size: 30px; /* Requisito 4 */
   color: white; /* Requisito 4 */
+  width: 480px;
 }
 
 #meme-insert {
@@ -70,7 +71,13 @@ footer {
   font-size: 20px;
 }
 
-@media screen and (max-width: 450px){
+#trybe {
+  background-color: #0fa36b;
+  color: black;
+}
+
+@media screen and (max-width: 450px) { /* Conteúdo para celular */
+
   h1 {
     font-size: 32px;
   }
@@ -80,17 +87,24 @@ footer {
     width: 200px;
   }
 
+  #meme-text {
+    width: 280px;
+  }
 
-  #meme-image-container , #meme-image {
+  #meme-image-container,
+  #meme-image {
     width: 300px;
     height: 300px;
   }
-  
-  #meme-1 , #meme-2 , #meme-3 , #meme-4 {
+
+  #meme-1,
+  #meme-2,
+  #meme-3,
+  #meme-4 {
     width: 70px;
     height: 70px;
   }
-  
+
   #meme-image-container {
     margin: 10px 0;
   }
