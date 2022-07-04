@@ -1,0 +1,332 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+/* Bulma */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+:root {
+  --vermelho: #d50000;
+  --indigo: #241d60;
+  --branco: #fffafa;
+  --preto: #24292f;
+}
+
+
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  /* height: calc(100vh - 8em); */
+  /* height: max(max-content, 100vh); não ta indo não sei pq */
+  height: max-content;
+  color: var(--branco);
+  background-color: var(--indigo);
+}
+
+hr {
+  margin: 5% 10%;
+  border: 3px solid var(--vermelho);
+  width: 80vw;
+}
+
+.carregando {
+  text-align: center;
+  margin-top: 30%;
+  animation: loop 1s ease-in-out infinite;
+}
+
+@keyframes loop {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+h3 {
+  text-align: center;
+  font-size: 150%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.navegacao {
+  color: var(--branco);
+  background-color: var(--vermelho);
+  transition: all 2s;
+}
+
+.centraliza {
+  margin: auto;
+}
+
+.lucas {
+  margin-top: 40%;
+}
+
+.line-1 {
+  font-family: 'Nova Mono', monospace;
+  font-size: 200%;
+  position: relative;
+  width: 22em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(213, 0, 0, .75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translateY(-50%); */
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 2s steps(17) 1s 1 normal both,
+    /* tempo e quantidade da animação */
+    blinkTextCursor 1s steps(32) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 9.5em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(213, 0, 0, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.front {
+  text-align: center;
+  font-size: 200%;
+  opacity: 0;
+  animation: show-front 4s linear 3s 1 normal both;
+}
+
+@keyframes show-front {
+  from {
+    opacity: 0;
+    color: var(--indigo);
+    /* color: #fffafa; */
+  }
+
+  to {
+    opacity: 1;
+    color: rgba(213, 0, 0, 0.75);
+  }
+}
+
+.texto {
+  width: 80vw;
+  margin: auto;
+  text-align: justify;
+  animation: show-texto 2s linear 3s 1 normal both;
+}
+
+@keyframes show-texto {
+  from {
+    opacity: 0;
+    color: var(--indigo);
+    /* color: #fffafa; */
+  }
+
+  to {
+    opacity: 1;
+    color: var(--branco);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.card {
+  color: var(--branco);
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: #0366d64d 0px 0px 0px 3px;
+  transition: box-shadow 500ms;
+}
+
+.card:hover {
+  box-shadow: var(--vermelho) 0px 0px 10px 5px;
+}
+
+.habilidade-card {
+  /* color: var(--vermelho); */
+  opacity: 0.9;
+  justify-content: space-around;
+  width: 130px;
+  height: 150px;
+}
+
+.social-card {
+  /* margin: auto; */
+  justify-content: center;
+  padding: 10px 5px;
+  width: 250px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.github-icon {
+  display: flex;
+  align-items: center;;
+}
+
+.github-icon span {
+  margin: 0 10px;
+}
+
+.social-card img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.formulario {
+  width: 70%;
+  height: 250px;
+  margin: 10px auto;
+  padding-top: 5px;
+}
+
+.formulario label {
+  margin: 10px 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+label span {
+  margin-right: 2px;
+  width: 80px;
+}
+
+.abaixo {
+  margin-bottom: 50px;
+}
+
+.foot {
+  background-color: var(--vermelho);
+  height: 3.25rem;
+  text-align: center;
+  padding-top: 1%;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  
+}
+
+/* .habilidades {
+  height: calc(100vh - 104px);
+} */
+
+/* Media queries */
+
+@media screen and (min-width: 500px) {
+  h3 {
+    font-size: 200%;
+  }
+
+  .carregando {
+    margin-top: 10%;
+  }
+
+  .lucas {
+    margin-top: 10%;
+  }
+
+  .line-1 {
+    font-size: 300%;
+  }
+
+  .front {
+    font-size: 300%;
+  }
+  
+  .abaixo {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-size: 300%;
+    margin-top: 5%;
+  }
+
+  .carregando {
+    margin-top: 20%;
+  }
+
+  .lucas {
+    margin-top: 20%;
+  }
+
+  .line-1 {
+    font-size: 400%;
+  }
+
+  .front {
+    font-size: 400%;
+  }
+
+  .texto {
+    width: 70vw;
+  }
+
+  .abaixo {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 400%;
+  }
+
+  .carregando {
+    margin-top: 10%;
+  }
+
+  .lucas {
+    margin-top: 10%;
+  }
+
+  .line-1 {
+    font-size: 500%;
+  }
+
+  .front {
+    font-size: 500%;
+  }
+
+  .texto {
+    width: 50vw;
+  }
+}
+
+@media (pointer: fine) {
+  .habilidade-texto {
+    display: none;
+  }
+  
+  .habilidade-card:hover .habilidade-texto {
+    display: inline;
+  }
+}
