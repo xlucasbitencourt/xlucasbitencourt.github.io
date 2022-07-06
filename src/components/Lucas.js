@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Content } from "react-bulma-components";
 
-class Lucas extends Component {
-  // state = {  }
-  render() {
+function Lucas() {
     return (
       <>
         <div className="lucas">
@@ -20,15 +18,18 @@ class Lucas extends Component {
             habilidades, e entrar em contato para trabalhos e afins.
           </p>
           <p>
-            Estou estudado desenvolvimento web na Trybe (Clique{" "}
-            <a href="https://www.betrybe.com/">AQUI</a> para saber mais).
+            Estou estudando desenvolvimento web na Trybe (Clique{" "}
+            <a target="_blank" rel="noreferrer" href="https://www.betrybe.com/">
+              AQUI
+            </a>{" "}
+            para saber mais).
           </p>
           <p>Possuo formação acadêmica em Administração pela UNIRIO - RJ.</p>
           <p>
             Gosto de tecnologia, e estou sempre por dentro de novidades. Busco estar
-            sempre conectado, com pessoas, novas tecnologias, e tudo relacionado. Estou
-            disponível para trabalhos, parcerias, e qualquer coisa que tenha a ver com
-            essa mundo mágico da programação.
+            sempre conectado, com pessoas, novas tecnologias, e tudo relacionado a este
+            mundo tecnológico. Estou disponível para trabalhos, parcerias, e qualquer
+            coisa que tenha a ver com essa mundo mágico da programação.
           </p>
           <p>Navegue pelo menu acima para saber mais e entrar em contato comigo.</p>
           <p>Site feito utilizando React.</p>
@@ -36,6 +37,5 @@ class Lucas extends Component {
       </>
     );
   }
-}
 
 export default Lucas;

@@ -30,8 +30,6 @@ class Contato extends Component {
       github: data,
       carregou: true,
     });
-    // console.log(fetchGithub);
-    // console.log(data);
   };
 
   /*
@@ -49,7 +47,6 @@ class Contato extends Component {
 
   render() {
     const { github, carregou } = this.state;
-    // const carregando = <p>Carregando</p>;
     return (
       <div className="abaixo">
         {!carregou ? (

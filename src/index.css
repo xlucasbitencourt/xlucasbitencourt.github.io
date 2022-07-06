@@ -16,8 +16,7 @@
 body {
   font-family: 'Oxygen', sans-serif;
   /* height: calc(100vh - 8em); */
-  /* height: max(max-content, 100vh); não ta indo não sei pq */
-  height: max-content;
+  /* height: max-content; */
   color: var(--branco);
   background-color: var(--indigo);
 }
@@ -172,6 +171,16 @@ h3 {
   justify-content: space-around;
   width: 130px;
   height: 150px;
+}
+
+.projeto-card {
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px 5px;
+}
+
+.projeto-card p:first-child {
+  font-size: 25px;
 }
 
 .social-card {
