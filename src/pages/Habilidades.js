@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJs,
@@ -14,18 +14,15 @@ import {
 import { faDatabase, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import Carregando from "../components/Carregando";
 
-class Habilidades extends Component {
-  state = { carregou: true };
+function Habilidades () {
 
-  componentDidMount() {
-    this.setState({ carregou: false });
-    setTimeout(() => {
-      this.setState({ carregou: true });
-    }, 2000);
-  }
+  const [carregou, setCarregou] = useState(true);
 
-  render() {
-    const { carregou } = this.state;
+  useEffect(() => {
+    setCarregou(false);
+    setTimeout(() => { setCarregou(true) }, 1000);
+  }, []);
+
     return (
       <div className="abaixo">
         {!carregou ? (
@@ -83,7 +80,6 @@ class Habilidades extends Component {
         )}
       </div>
     );
-  }
 }
 
 export default Habilidades;

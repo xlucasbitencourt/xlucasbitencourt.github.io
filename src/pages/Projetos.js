@@ -8,8 +8,8 @@ function Projetos() {
 
   useEffect(() => {
     setCarregou(false);
-    setTimeout(() => {setCarregou(true)}, 2000)
-  },[]);
+    setTimeout(() => {setCarregou(true)}, 1000)
+  }, []);
 
   const descricao = {
     wallet: "Uma carteira virtual, onde é possível registrar os gastos, em diferentes moedas, colocando categoria, método de pagameto, e podendo ver a soma dos gastos.",

@@ -4,7 +4,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Carregando from "../components/Carregando";
 import Formulario from "../components/Formulario";
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 class Contato extends Component {
   state = {
@@ -14,7 +13,7 @@ class Contato extends Component {
 
   componentDidMount() {
     this.setState({ carregou: false });
-    setTimeout(this.getGithub, 2000)
+    setTimeout(this.getGithub, 1000)
     //this.getGithub();
   }
 
@@ -31,19 +30,6 @@ class Contato extends Component {
       carregou: true,
     });
   };
-
-  /*
-  getLinkedin = async () => {
-    const headers = {
-      method: "GET",
-      headers: "X-RestLi-Protocol-Version:2.0.0",
-      mode: "cors",
-      cache: "default",
-    };
-    const fetchLinkedin = await fetch("https://api.linkedin.com/v2/people/(id:lucasbitencourt)", headers);
-    console.log(fetchLinkedin);
-  };
-  */
 
   render() {
     const { github, carregou } = this.state;
