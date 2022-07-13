@@ -32,7 +32,6 @@ function Lucas() {
             coisa que tenha a ver com essa mundo mágico da programação.
           </p>
           <p>Navegue pelo menu acima para saber mais e entrar em contato comigo.</p>
-          <p>Site feito utilizando React.</p>
         </Content>
       </>
     );

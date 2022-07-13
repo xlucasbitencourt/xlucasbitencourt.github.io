@@ -7,12 +7,12 @@ import Formulario from "../components/Formulario";
 
 class Contato extends Component {
   state = {
-    carregou: true,
+    carregou: false,
     github: {},
   };
 
   componentDidMount() {
-    this.setState({ carregou: false });
+    // this.setState({ carregou: false });
     setTimeout(this.getGithub, 1000)
     //this.getGithub();
   }
@@ -49,7 +49,7 @@ class Contato extends Component {
                   <span>{github.name}</span>
                 </div>
                 <img src={github.avatar_url} alt="github" />
-                <a href="https://github.com/xlucasbitencourt">{github.login}</a>
+                <a target='_blank' rel='noreferrer' href="https://github.com/xlucasbitencourt">{github.login}</a>
                 <p>{github.bio}</p>
                 <p>{github.location}</p>
               </div>
@@ -57,7 +57,7 @@ class Contato extends Component {
                 <span>
                   <FontAwesomeIcon size="3x" icon={faLinkedin} />
                 </span>
-                <a href="https://www.linkedin.com/in/lucasbitencourt">lucasbitencourt</a>
+                <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/lucasbitencourt">lucasbitencourt</a>
               </div>
               <div className="social-card card">
                 <span>

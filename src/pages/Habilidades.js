@@ -16,10 +16,10 @@ import Carregando from "../components/Carregando";
 
 function Habilidades () {
 
-  const [carregou, setCarregou] = useState(true);
+  const [carregou, setCarregou] = useState(false);
 
   useEffect(() => {
-    setCarregou(false);
+    // setCarregou(false);
     setTimeout(() => { setCarregou(true) }, 1000);
   }, []);
 
