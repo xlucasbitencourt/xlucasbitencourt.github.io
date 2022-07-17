@@ -1,23 +1,21 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Carregando from "../components/Carregando";
 import Formulario from "../components/Formulario";
 
-class Contato extends Component {
-  state = {
-    carregou: false,
-    github: {},
-  };
+function Contato () {
+  const [carregou, setCarregou] = useState(false);
+  const [github, setGithub] = useState({});
 
-  componentDidMount() {
-    // this.setState({ carregou: false });
-    setTimeout(this.getGithub, 1000)
-    //this.getGithub();
-  }
+  useEffect(() => {
+    setTimeout(() => { 
+      getGithub() 
+    }, 1000)
+  }, [])
 
-  getGithub = async () => {
+  const getGithub = async () => {
     
     const fetchGithub = await fetch("https://api.github.com/users/xlucasbitencourt", {
       headers: {
@@ -25,14 +23,10 @@ class Contato extends Component {
       },
     });
     const data = await fetchGithub.json();
-    this.setState({
-      github: data,
-      carregou: true,
-    });
+    setGithub(data);
+    setCarregou(true);
   };
 
-  render() {
-    const { github, carregou } = this.state;
     return (
       <div className="abaixo">
         {!carregou ? (
@@ -72,6 +66,5 @@ class Contato extends Component {
       </div>
     );
   }
-}
 
 export default Contato;

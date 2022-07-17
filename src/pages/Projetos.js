@@ -21,8 +21,9 @@ function Projetos() {
         <>
           <h3>Projetos</h3>
           <div className="container">
-            {listaProjetos.map((pro) => (
+            {listaProjetos.map((pro, index) => (
               <ProjetoCard
+                key={index}
                 nome={pro.nome}
                 descricao={pro.descricao}
                 linkPagina={pro.link}
