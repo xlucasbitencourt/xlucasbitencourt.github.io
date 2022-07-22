@@ -10,6 +10,7 @@ import {
   faGitAlt,
   faDocker,
   faBootstrap,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import Carregando from "../components/Carregando";
@@ -74,6 +75,10 @@ function Habilidades () {
               <div className="habilidade-card card">
                 <FontAwesomeIcon size="5x" icon={faBootstrap} />
                 <p className="habilidade-texto">Bootstrap</p>
+              </div>
+              <div className="habilidade-card card">
+                <FontAwesomeIcon size="5x" icon={faSass} />
+                <p className="habilidade-texto">Sass</p>
               </div>
             </div>
           </div>

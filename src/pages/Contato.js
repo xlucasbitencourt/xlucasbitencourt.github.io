@@ -22,7 +22,9 @@ function Contato () {
         Accept: "application/vnd.github.v3+json",
       },
     });
+    await console.log(fetchGithub);
     const data = await fetchGithub.json();
+    await console.log(data);
     setGithub(data);
     setCarregou(true);
   };
@@ -43,7 +45,7 @@ function Contato () {
                   <span>{github.name}</span>
                 </div>
                 <img src={github.avatar_url} alt="github" />
-                <a target='_blank' rel='noreferrer' href="https://github.com/xlucasbitencourt">{github.login}</a>
+                <a target='_blank' rel='noreferrer' href={github.html_url}>{github.login}</a>
                 <p>{github.bio}</p>
                 <p>{github.location}</p>
               </div>
