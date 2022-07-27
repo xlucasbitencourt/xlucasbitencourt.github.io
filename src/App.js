@@ -6,6 +6,7 @@ import { Route, Switch } from "react-router-dom";
 import Habilidades from "./pages/Habilidades";
 import Contato from "./pages/Contato";
 import Projetos from "./pages/Projetos";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contato" component={Contato} />
         <Route path="/projetos" component={Projetos} />
         <Route exact path="/" component={Lucas} />
+        <Route path='*' component={Error} />
       </Switch>
       <Footer />
     </div>

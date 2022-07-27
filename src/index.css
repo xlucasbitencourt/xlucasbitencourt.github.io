@@ -9,6 +9,7 @@
   --indigo: #241d60;
   --branco: #fffafa;
   --preto: #24292f;
+  --boxDefault: #0366d64d 0px 0px 0px 3px;
 }
 
 
@@ -193,7 +194,7 @@ h3 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .card {
@@ -204,7 +205,7 @@ h3 {
   align-items: center;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: #0366d64d 0px 0px 0px 3px;
+  box-shadow: var(--boxDefault);
   transition: box-shadow 500ms;
 }
 
@@ -243,7 +244,8 @@ h3 {
 
 .github-icon {
   display: flex;
-  align-items: center;;
+  align-items: center;
+  ;
 }
 
 .github-icon span {
@@ -285,7 +287,38 @@ label span {
   position: relative;
   bottom: 0px;
   width: 100%;
-  
+}
+
+.error {
+  text-align: center;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botoes button {
+  background-color: var(--preto);
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: var(--boxDefault);
+  box-sizing: border-box;
+  color: var(--branco);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  height: 4rem;
+  margin: 5% 10px;
+  padding: 0 1.6rem;
+  transition: all .5s;
+  touch-action: manipulation;
+}
+
+.botoes button:hover {
+  box-shadow: var(--vermelho) 0px 0px 10px 5px;
 }
 
 /* .habilidades {
@@ -314,9 +347,13 @@ label span {
   .front {
     font-size: 300%;
   }
-  
+
   .abaixo {
     margin-bottom: 200px;
+  }
+
+  .botoes {
+    flex-direction: row;
   }
 }
 
@@ -381,7 +418,7 @@ label span {
   .habilidade-texto {
     display: none;
   }
-  
+
   .habilidade-card:hover .habilidade-texto {
     display: inline;
   }
