@@ -225,6 +225,7 @@ h3 {
   width: 300px;
   margin: 10px auto;
   padding: 10px 5px;
+  justify-content: space-between;
 }
 
 .projeto-card p:first-child {
