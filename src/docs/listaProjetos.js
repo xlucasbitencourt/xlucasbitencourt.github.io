@@ -2,6 +2,7 @@ import wallet from "../img/wallet.png";
 import trivia from "../img/trivia.png";
 import cats from "../img/cats.png";
 import shoppingCart from "../img/shopping-cart.png";
+import solar from "../img/solar.png";
 
 // Atualize aqui a lista de projetos
 // Caso queira definir a ordem, mude aqui, ou altere "order" no css
@@ -32,11 +33,20 @@ const listaProjetos = [
     img: cats,
   },
   {
-    nome: 'Shopping Cart',
-    descricao: 'Uma simulação de um carrinho de compras, feito utilizando a API do Mercado Livre.',
+    nome: "Shopping Cart",
+    descricao:
+      "Uma simulação de um carrinho de compras, feito utilizando a API do Mercado Livre.",
     link: "https://lucasbitencourt.com.br/tp-shopping-cart/",
     github: "https://github.com/xlucasbitencourt/tp-shopping-cart",
     img: shoppingCart,
+  },
+  {
+    nome: "Solar System",
+    descricao:
+      "Primeiro projeto em React, onde mostro o básico da biblioteca, mexendo com componentes e ilustrando como é feita a renderização",
+    link: "https://lucasbitencourt.com.br/tp-solar-system/",
+    github: "https://github.com/xlucasbitencourt/tp-solar-system",
+    img: solar,
   },
 ];
 
