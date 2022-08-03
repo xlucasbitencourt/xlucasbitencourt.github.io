@@ -29,6 +29,7 @@ function Projetos() {
                 linkPagina={pro.link}
                 linkGithub={pro.github}
                 img={pro.img}
+                tec={pro.tec}
               />
             ))}
           </div>

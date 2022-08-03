@@ -15,6 +15,7 @@ const listaProjetos = [
     link: "https://lucasbitencourt.com.br/tp-wallet/",
     github: "https://github.com/xlucasbitencourt/tp-wallet",
     img: wallet,
+    tec: ["React", "Redux", "Router", "CSS", "API"],
   },
   {
     nome: "Trivia",
@@ -23,6 +24,7 @@ const listaProjetos = [
     link: "https://lucasbitencourt.com.br/tp-trivia/",
     github: "https://github.com/xlucasbitencourt/tp-trivia",
     img: trivia,
+    tec: ["React", "Redux", "Router", "CSS", "RTL", "API"],
   },
   {
     nome: "Landing Cats",
@@ -31,6 +33,7 @@ const listaProjetos = [
     link: "https://lucasbitencourt.com.br/lb-cats/",
     github: "https://github.com/xlucasbitencourt/lb-cats",
     img: cats,
+    tec: ["React", "CSS", "Bootstrap"],
   },
   {
     nome: "Shopping Cart",
@@ -39,6 +42,7 @@ const listaProjetos = [
     link: "https://lucasbitencourt.com.br/tp-shopping-cart/",
     github: "https://github.com/xlucasbitencourt/tp-shopping-cart",
     img: shoppingCart,
+    tec: ["HTML", "CSS", "Javascript", "API", "Web Storage", "Jest"],
   },
   {
     nome: "Solar System",
@@ -47,6 +51,7 @@ const listaProjetos = [
     link: "https://lucasbitencourt.com.br/tp-solar-system/",
     github: "https://github.com/xlucasbitencourt/tp-solar-system",
     img: solar,
+    tec: ["React", "CSS"],
   },
 ];
 
