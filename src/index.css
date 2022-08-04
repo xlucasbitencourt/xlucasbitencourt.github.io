@@ -275,7 +275,7 @@ h3 {
 
 .formulario {
   width: 70%;
-  height: 250px;
+  height: 280px;
   margin: 10px auto;
   padding-top: 5px;
 }
@@ -289,6 +289,24 @@ h3 {
 label span {
   margin-right: 2px;
   width: 80px;
+}
+
+.formulario button {
+  background-color: var(--vermelho);
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--boxDefault);
+  color: var(--branco);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+.formulario button:hover {
+  background-color: var(--indigo);
+  font-size: 22px;
 }
 
 .abaixo {
@@ -366,6 +384,14 @@ label span {
 
   .abaixo {
     margin-bottom: 200px;
+  }
+
+  .formulario {
+    width: 450px;
+  }
+  
+  .formulario label {
+    width: 60%;
   }
 
   .botoes {

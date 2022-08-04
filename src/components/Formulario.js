@@ -23,7 +23,11 @@ const Formulario = () => {
         mensagem,
       }),
     });
-    alert("Form submitted");
+    alert("Mensagem enviada! Em breve, entrarei em contato.");
+    setNome('');
+    setEmail('');
+    setTelefone('');
+    setMensagem('');
   };
 
   // Mexer somente daqui pra baixo
