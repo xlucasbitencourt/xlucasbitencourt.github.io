@@ -6,7 +6,7 @@ function ProjetoCard({ nome, img, descricao, linkPagina, linkGithub, tec }) {
       <p>{descricao}</p>
       <div className="container tec">
         {tec.map((item) => (
-          <div className="tec-item">{item}</div>
+          <div key={item} className="tec-item">{item}</div>
         ))}
       </div>
       <a target="_blank" rel="noreferrer" href={linkPagina}>

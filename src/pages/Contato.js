@@ -22,9 +22,7 @@ function Contato () {
         Accept: "application/vnd.github.v3+json",
       },
     });
-    await console.log(fetchGithub);
     const data = await fetchGithub.json();
-    await console.log(data);
     setGithub(data);
     setCarregou(true);
   };
