@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import PropTypes from 'prop-types';
 
-// import NavbarItem from "./NavbarItem";
-// import NavbarBurger from "./NavbarBurger";
-
+/*
 const NavbarItem = ({ page }) => (
   <Link
     className="navbar-item is-capitalized navegacao"
@@ -13,7 +10,9 @@ const NavbarItem = ({ page }) => (
     {page}
   </Link>
 );
+*/
 
+/*
 const NavbarBurger = (props) => (
   <button
     onClick={props.toggleMenu}
@@ -24,8 +23,9 @@ const NavbarBurger = (props) => (
     <span />
   </button>
 );
+*/
 
-export default class Nav extends React.Component {
+class Nav extends React.Component {
   state = {
     activeMenu: false,
   };
@@ -36,13 +36,32 @@ export default class Nav extends React.Component {
   };
   render() {
     const pages = ["home", "habilidades", "projetos", "contato"]; // itens do menu de navegação
-    const navbarItems = pages.map((page) => <NavbarItem page={page} key={page} />);
+    // const navbarItems = pages.map((page) => <NavbarItem page={page} key={page} />);
+
+    const navbarItems = pages.map((page) => (
+      <Link
+        key={page}
+        className="navbar-item is-capitalized navegacao"
+        to={page === "home" ? "/" : `/${page}`}
+      >
+        {page}
+      </Link>
+    ));
 
     return (
       <nav className={`navbar navegacao`}>
         <div className="navbar-brand navegacao">
-          
-          <NavbarBurger active={this.state.activeMenu} toggleMenu={this.toggleMenu} />
+          {/*<NavbarBurger active={this.state.activeMenu} toggleMenu={this.toggleMenu} />*/}
+          <button
+            onClick={this.toggleMenu}
+            className={`button navbar-burger navegacao ${
+              this.state.activeMenu ? "is-active" : ""
+            }`}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
         <div
           className={`navbar-menu navegacao ${this.state.activeMenu ? "is-active" : ""}`}
@@ -53,3 +72,5 @@ export default class Nav extends React.Component {
     );
   }
 }
+
+export default Nav;
