@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Carregando from "../components/Carregando";
-import Formulario from "../components/Formulario";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Carregando from '../components/Carregando';
+import Formulario from '../components/Formulario';
 
-function Contato () {
+function Contato() {
+  const ONE_SECOND = 1000;
   const [carregou, setCarregou] = useState(false);
   const [github, setGithub] = useState({});
 
-  useEffect(() => {
-    setTimeout(() => { 
-      getGithub() 
-    }, 1000)
-  }, [])
-
   const getGithub = async () => {
-    
-    const fetchGithub = await fetch("https://api.github.com/users/xlucasbitencourt", {
+    const fetchGithub = await fetch('https://api.github.com/users/xlucasbitencourt', {
       headers: {
-        Accept: "application/vnd.github.v3+json",
+        Accept: 'application/vnd.github.v3+json',
       },
     });
     const data = await fetchGithub.json();
@@ -27,44 +21,57 @@ function Contato () {
     setCarregou(true);
   };
 
-    return (
-      <div className="abaixo">
-        {!carregou ? (
-          <Carregando />
-        ) : (
-          <>
-            <h3 className="header">Entre em contato comigo:</h3>
-            <div className="container">
-              <div className="social-card card">
-                <div className="github-icon">
-                  <span>
-                    <FontAwesomeIcon size="3x" icon={faGithub} />
-                  </span>
-                  <span>{github.name}</span>
-                </div>
-                <img src={github.avatar_url} alt="github" />
-                <a target='_blank' rel='noreferrer' href={github.html_url}>{github.login}</a>
-                <p>{github.bio}</p>
-                <p>{github.location}</p>
-              </div>
-              <div className="social-card card">
+  useEffect(() => {
+    setTimeout(() => {
+      getGithub();
+    }, ONE_SECOND);
+  }, []);
+
+  return (
+    <div className="abaixo">
+      {!carregou ? (
+        <Carregando />
+      ) : (
+        <>
+          <h3 className="header">Entre em contato comigo:</h3>
+          <div className="container">
+            <div className="social-card card">
+              <div className="github-icon">
                 <span>
-                  <FontAwesomeIcon size="3x" icon={faLinkedin} />
+                  {/* eslint-disable-next-line react/jsx-max-depth */}
+                  <FontAwesomeIcon size="3x" icon={ faGithub } />
                 </span>
-                <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/lucasbitencourt">lucasbitencourt</a>
+                <span>{github.name}</span>
               </div>
-              <div className="social-card card">
-                <span>
-                  <FontAwesomeIcon size="3x" icon={faEnvelope} />
-                </span>
-                <a href="mailto:klucasbitencourt@gmail.com">klucasbitencourt@gmail.com</a>
-              </div>
+              <img src={ github.avatar_url } alt="github" />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={ github.html_url }
+              >
+                {github.login}
+              </a>
+              <p>{github.bio}</p>
+              <p>{github.location}</p>
             </div>
-            <Formulario />
-          </>
-        )}
-      </div>
-    );
-  }
+            <div className="social-card card">
+              <span>
+                <FontAwesomeIcon size="3x" icon={ faLinkedin } />
+              </span>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lucasbitencourt">lucasbitencourt</a>
+            </div>
+            <div className="social-card card">
+              <span>
+                <FontAwesomeIcon size="3x" icon={ faEnvelope } />
+              </span>
+              <a href="mailto:klucasbitencourt@gmail.com">klucasbitencourt@gmail.com</a>
+            </div>
+          </div>
+          <Formulario />
+        </>
+      )}
+    </div>
+  );
+}
 
 export default Contato;

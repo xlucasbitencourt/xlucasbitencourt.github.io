@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Carregando from "../components/Carregando";
-import ProjetoCard from "../components/ProjetoCard";
-import listaProjetos from "../docs/listaProjetos";
+import React, { useEffect, useState } from 'react';
+import Carregando from '../components/Carregando';
+import ProjetoCard from '../components/ProjetoCard';
+import listaProjetos from '../docs/listaProjetos';
 
 function Projetos() {
+  const ONE_SECOND = 1000;
   const [carregou, setCarregou] = useState(false);
 
   useEffect(() => {
-    // setCarregou(false);
     setTimeout(() => {
       setCarregou(true);
-    }, 1000);
+    }, ONE_SECOND);
   }, []);
 
   return (
@@ -23,13 +23,13 @@ function Projetos() {
           <div className="container">
             {listaProjetos.map((pro, index) => (
               <ProjetoCard
-                key={index}
-                nome={pro.nome}
-                descricao={pro.descricao}
-                linkPagina={pro.link}
-                linkGithub={pro.github}
-                img={pro.img}
-                tec={pro.tec}
+                key={ index }
+                nome={ pro.nome }
+                descricao={ pro.descricao }
+                linkPagina={ pro.link }
+                linkGithub={ pro.github }
+                img={ pro.img }
+                tec={ pro.tec }
               />
             ))}
           </div>

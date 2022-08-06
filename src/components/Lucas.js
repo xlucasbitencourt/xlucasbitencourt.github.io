@@ -1,6 +1,6 @@
-import React from "react";
-import { Content } from "react-bulma-components";
-import { useHistory } from "react-router-dom";
+import React from 'react';
+import { Content } from 'react-bulma-components';
+import { useHistory } from 'react-router-dom';
 
 function Lucas() {
   const history = useHistory();
@@ -21,10 +21,12 @@ function Lucas() {
           habilidades, e entrar em contato para trabalhos e afins.
         </p>
         <p>
-          Estou estudando desenvolvimento web na Trybe (Clique{" "}
+          Estou estudando desenvolvimento web na Trybe (Clique
+          {' '}
           <a target="_blank" rel="noreferrer" href="https://www.betrybe.com/">
             AQUI
-          </a>{" "}
+          </a>
+          {' '}
           para saber mais).
         </p>
         <p>Possuo formação acadêmica em Administração pela UNIRIO - RJ.</p>
@@ -34,26 +36,32 @@ function Lucas() {
           tecnológico. Estou disponível para trabalhos, parcerias, e qualquer coisa que
           tenha a ver com essa mundo mágico da programação.
         </p>
-        <p>Navegue pelo menu acima, ou clique nos botões abaixo para saber mais e entrar em contato comigo.</p>
+        <p>
+          Navegue pelo menu acima,
+          ou clique nos botões abaixo para saber mais e entrar em contato comigo.
+        </p>
         <div className="botoes">
           <button
-            onClick={() => {
-              history.push("/habilidades");
-            }}
+            type="button"
+            onClick={ () => {
+              history.push('/habilidades');
+            } }
           >
             Habilidades
           </button>
           <button
-            onClick={() => {
-              history.push("/projetos");
-            }}
+            type="button"
+            onClick={ () => {
+              history.push('/projetos');
+            } }
           >
             Projetos
           </button>
           <button
-            onClick={() => {
-              history.push("/contato");
-            }}
+            type="button"
+            onClick={ () => {
+              history.push('/contato');
+            } }
           >
             Contato
           </button>

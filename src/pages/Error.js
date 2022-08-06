@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
 function Error() {
   const history = useHistory();
@@ -12,30 +12,34 @@ function Error() {
       </p>
       <div className="botoes">
         <button
-          onClick={() => {
-            history.push("/");
-          }}
+          type="button"
+          onClick={ () => {
+            history.push('/');
+          } }
         >
           Início
         </button>
         <button
-          onClick={() => {
-            history.push("/habilidades");
-          }}
+          type="button"
+          onClick={ () => {
+            history.push('/habilidades');
+          } }
         >
           Habilidades
         </button>
         <button
-          onClick={() => {
-            history.push("/projetos");
-          }}
+          type="button"
+          onClick={ () => {
+            history.push('/projetos');
+          } }
         >
           Projetos
         </button>
         <button
-          onClick={() => {
-            history.push("/contato");
-          }}
+          type="button"
+          onClick={ () => {
+            history.push('/contato');
+          } }
         >
           Contato
         </button>

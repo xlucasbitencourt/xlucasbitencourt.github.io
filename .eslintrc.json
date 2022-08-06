@@ -1,0 +1,10 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": "trybe-frontend",
+    "plugins": [
+        "react"
+    ]
+}
