@@ -12,8 +12,6 @@
   --boxDefault: #0366d64d 0px 0px 0px 3px;
 }
 
-
-
 body {
   font-family: 'Oxygen', sans-serif;
   /* height: calc(100vh - 8em); */
@@ -121,7 +119,6 @@ h3 {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  /* transform: translateY(-50%); */
 }
 
 /* Animation */
@@ -162,7 +159,6 @@ h3 {
   from {
     opacity: 0;
     color: var(--indigo);
-    /* color: #fffafa; */
   }
 
   to {
@@ -182,7 +178,6 @@ h3 {
   from {
     opacity: 0;
     color: var(--indigo);
-    /* color: #fffafa; */
   }
 
   to {
@@ -214,7 +209,6 @@ h3 {
 }
 
 .habilidade-card {
-  /* color: var(--vermelho); */
   opacity: 0.9;
   justify-content: space-around;
   width: 130px;
@@ -223,7 +217,7 @@ h3 {
 
 .projeto-card {
   width: 300px;
-  margin: 10px auto;
+  margin: 10px;
   padding: 10px 5px;
   justify-content: space-between;
 }
@@ -248,7 +242,6 @@ h3 {
 }
 
 .social-card {
-  /* margin: auto; */
   justify-content: center;
   padding: 10px 5px;
   width: 250px;
@@ -354,10 +347,6 @@ label span {
 .botoes button:hover {
   box-shadow: var(--vermelho) 0px 0px 10px 5px;
 }
-
-/* .habilidades {
-  height: calc(100vh - 104px);
-} */
 
 /* Media queries */
 

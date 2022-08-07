@@ -4,6 +4,7 @@ import trivia from '../img/trivia.png';
 import cats from '../img/cats.png';
 import shoppingCart from '../img/shopping-cart.png';
 import solar from '../img/solar.png';
+import pixel from '../img/pixel.png';
 
 // Atualize aqui a lista de projetos
 // Caso queira definir a ordem, mude aqui, ou altere "order" no css
@@ -48,11 +49,20 @@ const listaProjetos = [
   {
     nome: 'Solar System',
     descricao:
-      'Primeiro projeto em React, onde mostro o básico da biblioteca, mexendo com componentes e ilustrando como é feita a renderização',
+      'Primeiro projeto em React, onde mostro o básico da biblioteca, mexendo com componentes e ilustrando como é feita a renderização.',
     link: 'https://lucasbitencourt.com.br/tp-solar-system/',
     github: 'https://github.com/xlucasbitencourt/tp-solar-system',
     img: solar,
     tec: ['React', 'CSS'],
+  },
+  {
+    nome: 'Pixel Art',
+    descricao:
+      'Uma paleta de cores, onde é possível pintar a paleta com as cores, geradas aleatoriamente. Também é possivel definir o tamanho da paleta.',
+    link: 'https://lucasbitencourt.com.br/tp-pixel/',
+    github: 'https://github.com/xlucasbitencourt/tp-pixel',
+    img: pixel,
+    tec: ['HTML', 'CSS', 'Javascript', 'DOM'],
   },
 ];
 
