@@ -268,7 +268,7 @@ h3 {
 
 .formulario {
   width: 70%;
-  height: 280px;
+  height: 330px;
   margin: 10px auto;
   padding-top: 10px;
 }
@@ -282,6 +282,16 @@ h3 {
 label span {
   margin-right: 2px;
   width: 80px;
+}
+
+.formulario textarea, .formulario input {
+  background-color: var(--indigo);
+  color: var(--branco);
+  width: 130px;
+}
+
+.formulario textarea {
+  height: 80px;
 }
 
 .formulario button {
@@ -376,11 +386,21 @@ label span {
   }
 
   .formulario {
+    font-size: 20px;
+    height: 400px;
     width: 450px;
   }
   
   .formulario label {
-    width: 60%;
+    width: 90%;
+  }
+
+  .formulario textarea, .formulario input {
+    width: 200px;
+  }
+  
+  .formulario textarea {
+    height: 130px;
   }
 
   .botoes {

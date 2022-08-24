@@ -54,7 +54,10 @@ function Formulario() {
           </label>
           <label htmlFor="email">
             <span>E-mail:</span>
-            <input value={ email } onChange={ (e) => setEmail(e.target.value) } />
+            <input
+              value={ email }
+              onChange={ (e) => setEmail(e.target.value) }
+            />
           </label>
           <label htmlFor="telefone">
             <span>Telefone:</span>
