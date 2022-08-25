@@ -58,7 +58,15 @@ function Contato() {
               <span>
                 <FontAwesomeIcon size="3x" icon={ faLinkedin } />
               </span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lucasbitencourt">lucasbitencourt</a>
+              <br />
+              <a
+                className="libutton"
+                href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=lucasbitencourt"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Follow on LinkedIn
+              </a>
             </div>
             <div className="social-card card">
               <span>
